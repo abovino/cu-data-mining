@@ -21,11 +21,11 @@ rates = {
   'date_added': datetime.today()
 }
 
-def push_to_sql(rates):
+def push_to_mongodb(rates):
   client = pymongo.MongoClient(os.environ['MONGODB_URI'])
   db = client['cu_data_mining']
   rates_collection = db['rates']
   rates_collection.insert_one(rates)
 
-# Push to sql database ...
-push_to_sql(rates)
+
+push_to_mongodb(rates)
