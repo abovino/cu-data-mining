@@ -1,10 +1,10 @@
 # Copper Data Mining
 
-A Python3 web scraping script to collect copper market rates.
+A Python3 web scraping script to collect copper prices.
 
 ### Installing
 
-Install the required dependencies
+To install dependencies
 
 ```python
 py -m pip install -r requirements.txt
