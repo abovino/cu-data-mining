@@ -9,6 +9,16 @@ Python3 web scraping app to download copper market prices, and save them to a My
 git clone git@github.com:abovino/cu_data_mining.git
 ```
 
+#### Create a virtual environment
+```bash
+py3 -m venv environment_name
+```
+
+#### Activate the virtual environment
+```bash
+venv\Scripts\activate
+```
+
 #### Install dependencies
 
 ```bash
