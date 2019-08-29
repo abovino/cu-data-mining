@@ -39,6 +39,8 @@ try:
   url = 'https://www.westmetall.de/en/markdaten.php'
   rates = get_todays_rates(url)
   insert_into_rates(rates)
+  print('Success!')
 except Exception as e:
+  print('An error occured.  Please check the logs for more info')
   log_fail = open('logs.txt', 'a')
   log_fail.write(f'[{datetime.today()}] - The following error occured: {str(e)}\n')
