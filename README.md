@@ -16,7 +16,10 @@ py3 -m venv environment_name
 
 #### Activate the virtual environment
 ```bash
+# On Windows
 venv\Scripts\activate
+# On Mac
+. venv/bin/activate
 ```
 
 #### Install dependencies
