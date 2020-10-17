@@ -10,8 +10,8 @@ load_dotenv()
 def get_todays_rates(url):
   res = get(url, stream=True).content
   html = BeautifulSoup(res, 'html.parser')
-  del_cu_rate = html.find_all(attrs={'href': '?action=show_diagram&field=DEL_high'})[1].text
-  eur_to_usd_ex_rate = html.find_all(attrs={'href': '?action=show_diagram&field=Euro_MTLE'})[1].text
+  del_cu_rate = html.find_all(attrs={'href': '/en/markdaten.php?action=diagram&field=DEL_high'})[1].text
+  eur_to_usd_ex_rate = html.find_all(attrs={'href': '/en/markdaten.php?action=diagram&field=Euro_MTLE'})[1].text
 
   return {
     'del_cu_rate': del_cu_rate,
